@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Bamla Survey</h1>
+  <p id="description">This is a survey form to describe how you know Bamla Tech</p>
+
+  <form id="survey-form">
+
+    <!-- Name -->
+    <label id="name-label" for="name">Name</label>
+    <input id="name" type="text" placeholder="Enter your name" required>
+    <br><br>
+
+    <!-- Email -->
+    <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" placeholder="Enter your email address" required>
+    <br><br>
+
+    <!-- Number -->
+    <label id="number-label" for="number">Phone Number</label>
+    <input id="number" type="number" placeholder="Enter your phone number" required>
+    <br><br>
+
+    <!-- Dropdown -->
+    <label for="dropdown">How do you know Bamla Tech?</label>
+    <select id="dropdown" name="dropdown" required>
+      <option value="">Select an option</option>
+      <option value="friends">Friends</option>
+      <option value="social">Social Media</option>
+      <option value="ads">Advertisements</option>
+    </select>
+    <br><br>
+
+    <!-- Radio Group 1 -->
+    <p>Would you recommend Bamla Tech?</p>
+    <label>
+      <input name="recommend" value="yes" type="radio"> Yes
+    </label>
+    <label>
+      <input name="recommend" value="no" type="radio"> No
+    </label>
+    <label>
+      <input name="recommend" value="maybe" type="radio"> Maybe
+    </label>
+    <br><br>
+
+    <!-- Radio Group 2 (NEW) -->
+    <p>How satisfied are you?</p>
+    <label>
+      <input name="satisfaction" value="good" type="radio"> Good
+    </label>
+    <label>
+      <input name="satisfaction" value="average" type="radio"> Average
+    </label>
+    <label>
+      <input name="satisfaction" value="bad" type="radio"> Bad
+    </label>
+    <br><br>
+
+    <!-- Checkboxes -->
+    <p>Select skills you've learned from Bamla Tech</p>
+    <ul style="list-style: none;">
+      <li><label><input type="checkbox" value="HTML"> HTML</label></li>
+      <li><label><input type="checkbox" value="CSS"> CSS</label></li>
+      <li><label><input type="checkbox" value="C#"> C# programming</label></li>
+      <li><label><input type="checkbox" value="Python"> Python programming</label></li>
+      <li><label><input type="checkbox" value="Other"> Other</label></li>
+    </ul>
+
+    <!-- Textarea -->
+    <textarea placeholder="Leave comments here"></textarea>
+    <br><br>
+
+    <!-- Submit -->
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+</body>
+</html>
